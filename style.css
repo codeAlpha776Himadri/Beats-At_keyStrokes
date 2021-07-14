@@ -5,6 +5,97 @@
     box-sizing: border-box;
 }
 
+
+
+.screen
+{
+    height: 100vh;
+    width: 100vw;
+    background: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80') no-repeat center center/cover;
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: all 1.5s;
+}
+
+.screen-animation
+{
+    animation: screen-collapse 400ms ease 1 forwards;
+}
+
+@keyframes screen-collapse
+{
+    from
+    {
+        height: 100vh;
+        opacity: 1;
+    }
+    to
+    {
+        height: 0vh;
+        opacity: 0;
+    }
+}
+
+.screen .desc 
+{
+    height: 380px;
+    width: 820px;
+    margin-bottom: 20px;
+    padding: 30px;
+    background-color: hsl(0deg 0% 0% / 59%);
+    border-radius: 7px;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.screen button
+{
+    height: 60px;
+    width: 180px;
+    outline: none;
+    background-color: rgb(0, 0, 66);
+    color: whitesmoke;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 4px;
+    border: none;
+}
+
+.info 
+{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    animation: anim 2000ms ease-in-out 100ms infinite forwards;
+}
+
+@keyframes anim 
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
 .main
 {
     height: 100vh;
@@ -12,6 +103,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 .main::before
@@ -70,4 +165,11 @@
     font-size: 30px;
     text-shadow: 2px 2px  black;
 
+}
+
+footer
+{
+    color: hsl(0deg 0% 100%);
+    margin-top: 56px;
+    height: 5px;
 }
