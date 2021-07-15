@@ -1,14 +1,10 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-
-.screen
-{
+.screen {
     height: 100vh;
     width: 100vw;
     background: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80') no-repeat center center/cover;
@@ -24,27 +20,22 @@
     transition: all 1.5s;
 }
 
-.screen-animation
-{
+.screen-animation {
     animation: screen-collapse 400ms ease 1 forwards;
 }
 
-@keyframes screen-collapse
-{
-    from
-    {
+@keyframes screen-collapse {
+    from {
         height: 100vh;
         opacity: 1;
     }
-    to
-    {
+    to {
         height: 0vh;
         opacity: 0;
     }
 }
 
-.screen .desc 
-{
+.screen .desc {
     height: 380px;
     width: 820px;
     margin-bottom: 20px;
@@ -60,8 +51,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.screen button
-{
+.screen button {
     height: 60px;
     width: 180px;
     outline: none;
@@ -73,31 +63,25 @@
     border: none;
 }
 
-.info 
-{
+.info {
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px rgb(0, 0, 0);
     animation: anim 2000ms ease-in-out 100ms infinite forwards;
 }
 
-@keyframes anim 
-{
-    0%
-    {
+@keyframes anim {
+    0% {
         opacity: 0;
     }
-    50%
-    {
+    50% {
         opacity: 1;
     }
-    100%
-    {
+    100% {
         opacity: 0;
     }
 }
 
-.main
-{
+.main {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -109,8 +93,7 @@
     z-index: 10;
 }
 
-.main::before
-{
+.main::before {
     background: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80') no-repeat center center/cover;
     content: '';
     position: absolute;
@@ -122,8 +105,7 @@
     /* opacity: 0.7; */
 }
 
-.main .key-box
-{
+.main .key-box {
     height: 80px;
     width: 70px;
     border: 3px solid hsl(0deg 0% 0%);
@@ -136,39 +118,28 @@
     justify-content: center;
     flex-direction: column;
     font-size: 16px;
-
     transition: all 0.07s;
-
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.key-box-animationOnClick
-{
+.key-box-animationOnClick {
     border: 2px solid black;
     box-shadow: 2px 2px 40px #ff280f;
     transform: scale(1.1);
 }
 
-
-.main .key-box span 
-{
+.main .key-box span {
     color: hsl(0deg 0% 18%);
     font-size: medium;
     text-shadow: 1px 1px rgb(255 255 255);
 }
 
-
-
-
-.main .key-box h3
-{
+.main .key-box h3 {
     font-size: 30px;
-    text-shadow: 2px 2px  black;
-
+    text-shadow: 2px 2px black;
 }
 
-footer
-{
+footer {
     color: hsl(0deg 0% 100%);
     margin-top: 56px;
     height: 5px;
